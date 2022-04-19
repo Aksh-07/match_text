@@ -7,7 +7,6 @@ def store_data():
     for files in all_files_list:
         with open(f"all_files/{files}", "r") as d:
             dict1[d.name] = d.read().replace("\n", " ")
-
     return dict1
 
 
